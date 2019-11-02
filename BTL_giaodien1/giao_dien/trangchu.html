@@ -19,11 +19,11 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="../giao_dien/trangchu.html">Question & Answer</a>
+        <a class="navbar-brand" href="#">Question & Answer</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="../giao_dien/trangchu.html">TRANG CHỦ</a></li>
+          <li class="active"><a href="#">TRANG CHỦ</a></li>
           <li><a href="../giao_dien/questions.html">ASK QUESTIONS</a></li>
         </ul>
         <form class="navbar-form navbar-right" role="search">
@@ -68,7 +68,7 @@
             </p>
           </div>
 
-          <p><a href="../giao_dien/huongdan.html">HƯỚNG DẪN</a></p>
+          <p><a href="../giao_dien/huongdan.html" target="_blank">HƯỚNG DẪN</a></p>
           <p><a href="../giao_dien/dieu_khoan.html"target="_blank">ĐIỀU KHOẢN</a></p>
         </div>
         
@@ -135,48 +135,36 @@
             </div>
         </div> 
         <br>
-
+        <form>
         <div class="row">
-          <div class="col-sm-3">
-            <div class="well">
-             <p>John</p>
-             <img src="image/avartar-1.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-             <button type="button" class="btn btn-default">Follow</button>
+          <form action method="post">
+            <div class="col-sm-3">
+              <div class="well">
+                <label class="form-check Userame">{Userame}</label>
+               <img src="image/avartar-3.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+               <button type="button" class="btn btn-default btn-sm" class="form-control ">Follow</button>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-9">
-            <div class="well">
-              <p>Deploy dự án Laravel lên hosting, ko chỉnh sửa cấu trúc thư mục</p>
-              <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-thumbs-up"></span> Like
-              </button>     
-              <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-comment"></span> Bình luận
-              </button>   
+            <div class="col-sm-9">
+              <div class="well">
+                <p class="form-control">Câu hỏi....</p>    
+                <p>
+                  <button type="button" name = "like" class="btn btn-default btn-sm" class="form-control ">
+                        <span class="glyphicon glyphicon-thumbs-up"></span> Like
+                  </button>
+                  <a class="btn btn-default btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="glyphicon glyphicon-comment"></span> Bình luận
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <textarea id="comment" name="comment" style = "width: 100%"></textarea>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+              </form>
+              </div>
+          </form>
         
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="well">
-             <p>Jane</p>
-             <img src="image/avartar-3.jpg" class="img-circle" height="55" width="55" alt="Avatar">
-             <button type="button" class="btn btn-default">Follow</button>
-            </div>
-          </div>
-          <div class="col-sm-9">
-            <div class="well">
-              <p>Thêm nút Settings cho Wordpress plugin</p>
-              <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-thumbs-up"></span> Like
-              </button>     
-              <button type="button" class="btn btn-default btn-sm">
-                  <span class="glyphicon glyphicon-comment"></span> Bình luận
-              </button>   
-            </div>
-          </div>
-        </div>
         
       </div>
 
@@ -217,15 +205,15 @@
   <!-- tạo phương thức liên hệ -->
   <footer class="container-fluid text-center">
       <div id="contact" class="container-fluid bg-grey">
-        <form action="" method="post">
           <h2 class="text-center">LIÊN HỆ</h2>
           <div class="row">
             <div class="col-sm-5">
               <p>Contact us and we'll get back to you within 24 hours.</p>
               <p><span class="glyphicon glyphicon-map-marker"></span> Cau Giay, Ha Noi</p>
-              <p><span class="glyphicon glyphicon-phone"></span> +084 123456789</p>
+              <p><span class="glyphicon glyphicon-phone"></span> +84 123456789</p>
               <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
             </div>
+
             <div class="col-sm-7 slideanim">
               <div class="row">
                 <div class="col-sm-6 form-group">
@@ -238,13 +226,13 @@
               <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
               <div class="row">
                 <div class="col-sm-12 form-group">
-                  <button class="btn btn-default pull-right" type="send">Send</button>
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
                 </div>
               </div>
             </div>
           </div>
-          </form>
-      </div>
+
+        </div>
   </footer>
 </body>
 </html>
